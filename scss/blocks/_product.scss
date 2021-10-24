@@ -1,0 +1,106 @@
+
+.farmers {
+  margin-top: 130px;
+}
+
+.product {
+  padding: 16px;
+  position: relative;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 30px -4px rgba(34, 60, 80, 0.2);
+  }
+
+  &__discount {
+    position: absolute;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+
+    &:nth-child(1) {
+      top: 28px;
+      left: 30px;
+      color: $color-green;
+    }
+
+    &:nth-child(2) {
+      bottom: 5px;
+      text-decoration: line-through;
+      color: #a9a9a9;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  &__paragraph {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #575757;
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  &__btn-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__btn {
+    padding: 6px 12px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    background: $color-green;
+    color: #fff;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: #fff;
+      color: $color-primary;
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .products {
+    width: 100%;
+
+    .product {
+      margin-top: 30px;
+
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  .product {
+    margin-top: 20px;
+  }
+}
+

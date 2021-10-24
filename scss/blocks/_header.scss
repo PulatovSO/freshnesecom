@@ -153,6 +153,7 @@
 
 
 
+
 @media (max-width: 992px) {
   .header__form {
     display: none;
@@ -230,4 +231,16 @@
     top: 0;
     right: 60px;
   }
+}
+
+@media (max-width: 370px) {
+
+  .search-form {
+
+    input {
+      width: 90%;
+    }
+  }
+
+
 }
