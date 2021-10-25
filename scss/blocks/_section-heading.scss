@@ -1,0 +1,29 @@
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.section__btn {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  i {
+    position: relative;
+    top: 2px;
+    color: $color-green;
+  }
+}
