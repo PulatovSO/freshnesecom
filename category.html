@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <title>Lesson</title>
+</head>
+<body>
+
+  <header id="site-header" class="header">
+    <div class="header__wrap container">
+      <div class="header__top row between-xs">
+        <ul class="header__contact-list contact-list row">
+          <li class="contact-list__item"><a href="#">Chat with us</a></li>
+          <li class="contact-list__item"><a href="tel:420336775664">+420 336 775 664</a></li>
+          <li class="contact-list__item"><a href="#">info@freshnesecom.com</a></li>
+        </ul>
+        <nav class="header__nav">
+          <ul class="header__nav-list nav-list row">
+            <li class="nav-list__item"><a href="#">Blog</a></li>
+            <li class="nav-list__item"><a href="#">About Us</a></li>
+            <li class="nav-list__item"><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <div class="header__menu-wrap">
+          <button class="header__menu"><i class='bx bx-menu'></i></button>
+        </div>
+      </div>
+      <div class="header__middle row middle-xs between-xs">
+        <a href="#"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
+        <form action="https://echo.htmlacademy.ru" class="header__form search-form">
+          <span class="search-form__toggle">
+            All categories <i class='bx bx-chevron-down'></i>
+            <div class="toggle-menu">
+              <ul>
+                <li><a href="#">Bakery</a></li>
+                <li><a href="#">Vegtables</a></li>
+                <li><a href="#">Meat and fish</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Special nutrition</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Pharmacy</a></li>
+              </ul>
+            </div>
+          </span>
+          <input type="text" id="search-item" name="search" aria-label="Search Products, categories ..." placeholder="Search Products, categories ..." required>
+          <button class="search-form__btn"><i class='bx bx-search bx-rotate-90'></i></button>
+        </form>
+        <ul class="header__icons">
+          <li class="header__item"><button class="header__icon icon-hidden"><i class='bx bx-search bx-rotate-90'></i></button></li>
+          <li class="header__item"><button class="header__icon"><img src="img/user.svg" alt="icon"></button></li>
+          <li class="header__item"><button class="header__icon"><img src="img/shopping.svg" alt="icon"></button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom bottom">
+      <ul class="bottom__list container row">
+        <li class="bottom__item">
+          <button class="bottom__btn">Bakery <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Fruit and Vegtables <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Meat and fish <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Kitchen <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Special nutrition <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Baby <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Pharmacy <i class='bx bx-chevron-down'></i></button>
+            <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="fruits">
+    <div class="fruits__wrap fulled-container">
+      <div class="fruits__text">
+        <p class="fruits__root"><span>Homepage /</span> Fruit and vegetables</p>
+        <div class="fruits__head">
+          <h2 class="fruits__title">Fruit and vegetables</h2>
+          <ul class="fruits__views">
+            <li class="fruits__view view"><button>Grid view</button></li>
+            <li class="fruits__view view"><button>List view</button></li>
+            <li class="fruits__view"><button> <span>107</span> Products</button></li>
+          </ul>
+        </div>
+        <!-- <div class="fruits__filter filter">
+        </div> -->
+        <div class="fruits__selects">
+          <p class="fruits__selected-title">Applied filters:</p>
+          <span class="fruits__selected">Selected filtre <i class='bx bx-x'></i></span>
+          <span class="fruits__selected">Selected filtre <i class='bx bx-x'></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="fulled-container">
+    <aside class="side">
+      <ul class="side__block">
+        <li class="side__title">Categories</li>
+        <li class="side__item">Category name <span>320</span></li>
+        <li class="side__item">Category name <span>112</span></li>
+        <li class="side__item">Category name <span>32</span></li>
+        <li class="side__item">Category name <span>48</span></li>
+      </ul>
+      <ul class="side__block">
+        <li class="side__title">Brands</li>
+        <li class="side__item"><input type="checkbox"> Filtre by brand item</li>
+        <li class="side__item"><input type="checkbox" checked> Filtre by brand item</li>
+        <li class="side__item"><input type="checkbox" checked> Filtre by brand item</li>
+        <li class="side__item"><input type="checkbox"> Filtre by brand item</li>
+        <li class="side__item"><input type="checkbox"> Filtre by brand item</li>
+      </ul>
+      <ul class="side__block">
+        <li class="side__title">Rating</li>
+        <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i></li>
+        <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bx-star' ></i></li>
+        <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i></li>
+        <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i></li>
+        <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap fulled-container">
+      <div class="footer__cols row between-xs">
+        <ul class="footer__col fcol col-xs-6 center-xs col-sm-3 start-sm">
+          <li class="fcol__title">Get in touch</li>
+          <li class="fcol__item"><a href="#">About Us</a></li>
+          <li class="fcol__item"><a href="#">Careers</a></li>
+          <li class="fcol__item"><a href="#">Press Releases</a></li>
+          <li class="fcol__item"><a href="#">Blog</a></li>
+        </ul>
+        <ul class="footer__col fcol col-xs-6 center-xs col-sm-3 start-sm">
+          <li class="fcol__title">Connections</li>
+          <li class="fcol__item"><a href="#">Facebook</a></li>
+          <li class="fcol__item"><a href="#">Twitter</a></li>
+          <li class="fcol__item"><a href="#">Instagram</a></li>
+          <li class="fcol__item"><a href="#">Youtube</a></li>
+          <li class="fcol__item"><a href="#">Linkedin</a></li>
+        </ul>
+        <ul class="footer__col fcol col-xs-6 center-xs col-sm-3 start-sm">
+          <li class="fcol__title">Earnings</li>
+          <li class="fcol__item"><a href="#">Become an Affiliate</a></li>
+          <li class="fcol__item"><a href="#">Advertise your product</a></li>
+          <li class="fcol__item"><a href="#">Sell on Market</a></li>
+        </ul>
+        <ul class="footer__col fcol col-xs-6 center-xs col-sm-3 start-sm">
+          <li class="fcol__title">Account</li>
+          <li class="fcol__item"><a href="#">Your account</a></li>
+          <li class="fcol__item"><a href="#">Returns Centre</a></li>
+          <li class="fcol__item"><a href="#">100 % purchase protection</a></li>
+          <li class="fcol__item"><a href="#">Chat with us</a></li>
+          <li class="fcol__item"><a href="#">Help</a></li>
+        </ul>
+      </div>
+      <ul class="footer__tags tags">
+        <li class="tags__title">Product tags</li>
+        <li class="footer__tag"><a href="#">Beans</a></li>
+        <li class="footer__tag"><a href="#">Carrots</a></li>
+        <li class="footer__tag"><a href="#">Apples</a></li>
+        <li class="footer__tag"><a href="#">Garlic</a></li>
+        <li class="footer__tag"><a href="#">Mushrooms</a></li>
+        <li class="footer__tag"><a href="#">Tomatoes</a></li>
+        <li class="footer__tag"><a href="#">Chilli peppers</a></li>
+        <li class="footer__tag"><a href="#">Broccoli</a></li>
+        <li class="footer__tag"><a href="#">Watermelons</a></li>
+        <li class="footer__tag"><a href="#">Oranges</a></li>
+        <li class="footer__tag"><a href="#">Bananas</a></li>
+        <li class="footer__tag"><a href="#">Grapes</a></li>
+        <li class="footer__tag"><a href="#">Cherries</a></li>
+        <li class="footer__tag"><a href="#">Meat</a></li>
+        <li class="footer__tag"><a href="#">Seo tag</a></li>
+        <li class="footer__tag"><a href="#">Fish</a></li>
+        <li class="footer__tag"><a href="#">Seo tag</a></li>
+        <li class="footer__tag"><a href="#">Fresh food</a></li>
+        <li class="footer__tag"><a href="#">Lemons</a></li>
+      </ul>
+      <p class="footer__copyright center-xs start-sm">Copyright © 2020 petrbilek.com</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
