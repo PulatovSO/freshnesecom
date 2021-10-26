@@ -1,4 +1,8 @@
 
+main {
+  margin-top: 64px;
+}
+
 .side {
   
   &__block {
@@ -49,5 +53,254 @@
     height: 20px;
     position: relative;
     top: 4px;
+  }
+}
+
+.filter {
+  margin-bottom: 16px;
+
+  &__block {
+    margin-right: 16px;
+    padding: 10px 27px;
+    padding-right: 0;
+    display: inline-block;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    
+    label {
+      margin: 0 16px;
+      position: relative;
+      font-size: 14px;
+      line-height: 19px;
+      
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .checkmark {
+          border:5px solid #000;
+        }
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        height: 20px;
+        width: 20px;
+        transform: translateY(-50%);
+        border: 2px solid #d1d1d1;
+        border-radius: 50%;
+      }
+    }
+
+    select {
+      margin-right: 16px;
+      background: none;
+      border: none;
+      outline-color: #d1d1d1;
+    }
+  }
+}
+
+.check-block {
+
+  input {
+    &:checked ~ .checkmark-box {
+      background: $color-green;
+    } 
+  }
+
+  .checkmark-box {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    height: 20px;
+    width: 20px;
+    transform: translateY(-50%);
+    border: 2px solid #d1d1d1;
+    border-radius: 3px;
+  }
+
+  &__item {
+    margin-right: 16px;
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+  }
+}
+
+
+.side__form {
+
+  .side__line {
+    width: 251px;
+    height: 6px;
+    position: relative;
+    background: #EBEBEB;
+    border-radius: 12px;
+
+    span {
+      position: absolute;
+      left: 50px;
+      width: 80px;
+      height: 6px;
+      background: $color-green;
+
+      &:before,
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #D1D1D1;
+        background: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      }
+
+      &:before {
+        position: absolute;
+        top: -7px;
+        left: -3px;
+      } 
+
+      &:after {
+        position: absolute;
+        top: -7px;
+        right: -3px;
+      } 
+    }
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  input {
+    padding: 20px 16px;
+    width: 109px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline-color: $color-light-gray;
+  }
+
+  .side__inner-wrap {
+    margin-top: 23px;
+    display: flex;
+  }
+
+  .side__inner-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side__btn-wrap {
+    padding: 0;
+    margin-top: 43px;
+
+    button {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:nth-child(1) {
+      padding: 12px 16px;
+      background: $color-green;
+      color: #fff;
+      border: 2px solid #46760a;
+      box-sizing: border-box;
+      border-radius: 12px;
+
+      &:hover {
+        border: 2px solid $color-green;
+        background: none;
+        color: $color-green;
+      }      
+    }
+
+    button:nth-child(2) {
+      margin-left: 34px;
+      padding: 12px 16px;
+      background: none;
+      color: #a9a9a9;
+      border-radius: 12px;
+      border: none;
+      border: 2px solid transparent;
+
+      &:hover {
+        border: 2px solid $color-green;
+        color: $color-green;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 992px) {
+
+  .side {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .fruits__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .fruits__view {
+      margin-bottom: 30px;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side > ul,
+  .side > form{
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .side > ul,
+  .side > form{
+    width: 100%;
   }
 }

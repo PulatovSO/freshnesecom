@@ -20,6 +20,13 @@
   line-height: 48px;
 }
 
+.fruits__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .fruits__views {
   display: flex;
 

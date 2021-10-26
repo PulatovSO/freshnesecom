@@ -157,17 +157,53 @@
   <section class="fruits">
     <div class="fruits__wrap fulled-container">
       <div class="fruits__text">
-        <p class="fruits__root"><span>Homepage /</span> Fruit and vegetables</p>
+        <p class="fruits__root"><span><a href="index.html">Homepage</a> /</span> Fruit and vegetables</p>
         <div class="fruits__head">
-          <h2 class="fruits__title">Fruit and vegetables</h2>
-          <ul class="fruits__views">
-            <li class="fruits__view view"><button>Grid view</button></li>
-            <li class="fruits__view view"><button>List view</button></li>
-            <li class="fruits__view"><button> <span>107</span> Products</button></li>
-          </ul>
+          <div class="fruits__inner">
+            <h2 class="fruits__title">Fruit and vegetables</h2>
+            <ul class="fruits__views">
+              <li class="fruits__view view"><button>Grid view</button></li>
+              <li class="fruits__view view"><button>List view</button></li>
+              <li class="fruits__view"><button> <span>107</span> Products</button></li>
+            </ul>
+          </div>
         </div>
-        <!-- <div class="fruits__filter filter">
-        </div> -->
+        <div class="fruits__filter filter">
+          <div class="filter__block">
+            <label class="filter__label" for="check-one">Filtre text
+              <input type="radio" id="check-one" name="radio-btn">
+              <span class="checkmark"></span>
+            </label>
+            <label class="filter__label" for="check-two">Filtre text
+              <input type="radio" id="check-two" name="radio-btn" checked>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="filter__block check-block">
+            <label class="filter__label" for="checkbox">Filte
+              <input type="checkbox" id="checkbox" name="checkbox">
+              <span class="checkmark-box"></span>
+            </label>
+            <span class="check-block__item">Nbm</span>
+          </div>
+          <div class="filter__block check-block">
+            <label class="filter__label" for="checkbox">Filte
+              <input type="checkbox" id="checkbox" name="checkbox">
+              <span class="checkmark-box"></span>
+            </label>
+            <span class="check-block__item">Nbm</span>
+          </div>
+          <div class="filter__block check-block">
+            <label class="filter__label" for="checkbox">Filte
+              <input type="checkbox" id="checkbox" name="checkbox">
+              <span class="checkmark-box"></span>
+            </label>
+            <span class="check-block__item">12</span>
+            <select name="filter-sellect" id="select">
+              <option value="item">Select</option>
+            </select>
+          </div>
+        </div>
         <div class="fruits__selects">
           <p class="fruits__selected-title">Applied filters:</p>
           <span class="fruits__selected">Selected filtre <i class='bx bx-x'></i></span>
@@ -177,8 +213,8 @@
     </div>
   </section>
 
-  <main class="fulled-container">
-    <aside class="side">
+  <main class="fulled-container row">
+    <aside class="side col-md-3 col-xs-12">
       <ul class="side__block">
         <li class="side__title">Categories</li>
         <li class="side__item">Category name <span>320</span></li>
@@ -202,7 +238,208 @@
         <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bxs-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i></li>
         <li class="side__item"><input type="checkbox"><i class='bx bxs-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i><i class='bx bx-star' ></i></li>
       </ul>
+      <form class="side__form">
+        <p class="side__title">Price</p>
+        <p class="side__line"><span></span></p>
+        <div class="side__inner-wrap">
+          <div class="side__inner-block">
+            <label for="side__min">Min</label>
+            <input type="number" class="side__min-input" id="min" name="min" placeholder="0" required>
+          </div>
+          <div class="side__inner-block">
+            <label for="side__max">Max</label>
+            <input type="number" class="side__max-input" id="max" name="max" placeholder="0000" required>
+          </div>
+        </div>
+        <div class="side__btn-wrap">
+          <button class="side__button" type="submit">Apply</button>
+          <button class="side__button" type="reset">Reset</button>
+        </div>
+      </form>
     </aside>
+
+    <section class="product-blocks col-sm-12 col-md-9">
+      <div class="product-blocks__block block-item">
+        <img src="https://media.tenor.com/images/15863e40cf609665bc339f58757cbc3f/tenor.png" alt="image">
+        <div class="block-item__text">
+          <h3 class="block-item__title">Product title</h3>
+          <p class="block-item__p">Space for a small product description </p>
+          <div class="block-item__stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <div class="block-item__cols">
+            <div>
+              <p>Freshness</p>
+              <p>Farm</p>
+              <p>Delivery</p>
+              <p>Stock</p>
+            </div>
+            <div>
+              <p><span>New</span> (Extra fresh)</p>
+              <p>Groshery Tarm Fields</p>
+              <p>Europe</p>
+              <p><span>320 pcs</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="block-item__price-col">
+          <p class="block-item__price">36.99 USD</p>
+          <p class="block-item__discount">48.56</p>
+          <p class="block-item__delivery">Free Shipping</p>
+          <span>Delivery in 1 day</span>
+          <a href="#" class="block-item__btn-dark">Product Detail <i class='bx bx-chevron-right' ></i></a>
+          <a href="#" class="block-item__btn"><i class='bx bx-heart' ></i> Add to wish list</a>
+        </div>
+      </div>
+      <div class="product-blocks__block block-item">
+        <img src="https://media.tenor.com/images/15863e40cf609665bc339f58757cbc3f/tenor.png" alt="image">
+        <div class="block-item__text">
+          <h3 class="block-item__title">Product title</h3>
+          <p class="block-item__p">Space for a small product description </p>
+          <div class="block-item__stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <div class="block-item__cols">
+            <div>
+              <p>Freshness</p>
+              <p>Farm</p>
+              <p>Delivery</p>
+              <p>Stock</p>
+            </div>
+            <div>
+              <p><span>New</span> (Extra fresh)</p>
+              <p>Groshery Tarm Fields</p>
+              <p>Europe</p>
+              <p><span>320 pcs</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="block-item__price-col">
+          <p class="block-item__price">36.99 USD</p>
+          <p class="block-item__discount">48.56</p>
+          <p class="block-item__delivery">Free Shipping</p>
+          <span>Delivery in 1 day</span>
+          <a href="#" class="block-item__btn-dark">Product Detail <i class='bx bx-chevron-right' ></i></a>
+          <a href="#" class="block-item__btn"><i class='bx bx-heart' ></i> Add to wish list</a>
+        </div>
+      </div>
+      <div class="product-blocks__block block-item">
+        <img src="https://media.tenor.com/images/15863e40cf609665bc339f58757cbc3f/tenor.png" alt="image">
+        <div class="block-item__text">
+          <h3 class="block-item__title">Product title</h3>
+          <p class="block-item__p">Space for a small product description </p>
+          <div class="block-item__stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <div class="block-item__cols">
+            <div>
+              <p>Freshness</p>
+              <p>Farm</p>
+              <p>Delivery</p>
+              <p>Stock</p>
+            </div>
+            <div>
+              <p><span>New</span> (Extra fresh)</p>
+              <p>Groshery Tarm Fields</p>
+              <p>Europe</p>
+              <p><span>320 pcs</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="block-item__price-col">
+          <p class="block-item__price">36.99 USD</p>
+          <p class="block-item__discount">48.56</p>
+          <p class="block-item__delivery">Free Shipping</p>
+          <span>Delivery in 1 day</span>
+          <a href="#" class="block-item__btn-dark">Product Detail <i class='bx bx-chevron-right' ></i></a>
+          <a href="#" class="block-item__btn"><i class='bx bx-heart' ></i> Add to wish list</a>
+        </div>
+      </div>
+      <div class="product-blocks__block block-item">
+        <img src="https://media.tenor.com/images/15863e40cf609665bc339f58757cbc3f/tenor.png" alt="image">
+        <div class="block-item__text">
+          <h3 class="block-item__title">Product title</h3>
+          <p class="block-item__p">Space for a small product description </p>
+          <div class="block-item__stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <div class="block-item__cols">
+            <div>
+              <p>Freshness</p>
+              <p>Farm</p>
+              <p>Delivery</p>
+              <p>Stock</p>
+            </div>
+            <div>
+              <p><span>New</span> (Extra fresh)</p>
+              <p>Groshery Tarm Fields</p>
+              <p>Europe</p>
+              <p><span>320 pcs</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="block-item__price-col">
+          <p class="block-item__price">36.99 USD</p>
+          <p class="block-item__discount">48.56</p>
+          <p class="block-item__delivery">Free Shipping</p>
+          <span>Delivery in 1 day</span>
+          <a href="#" class="block-item__btn-dark">Product Detail <i class='bx bx-chevron-right' ></i></a>
+          <a href="#" class="block-item__btn"><i class='bx bx-heart' ></i> Add to wish list</a>
+        </div>
+      </div>
+      <div class="product-blocks__block block-item">
+        <img src="https://media.tenor.com/images/15863e40cf609665bc339f58757cbc3f/tenor.png" alt="image">
+        <div class="block-item__text">
+          <h3 class="block-item__title">Product title</h3>
+          <p class="block-item__p">Space for a small product description </p>
+          <div class="block-item__stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bx-star'></i>
+          </div>
+          <div class="block-item__cols">
+            <div>
+              <p>Freshness</p>
+              <p>Farm</p>
+              <p>Delivery</p>
+              <p>Stock</p>
+            </div>
+            <div>
+              <p><span>New</span> (Extra fresh)</p>
+              <p>Groshery Tarm Fields</p>
+              <p>Europe</p>
+              <p><span>320 pcs</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="block-item__price-col">
+          <p class="block-item__price">36.99 USD</p>
+          <p class="block-item__discount">48.56</p>
+          <p class="block-item__delivery">Free Shipping</p>
+          <span>Delivery in 1 day</span>
+          <a href="#" class="block-item__btn-dark">Product Detail <i class='bx bx-chevron-right' ></i></a>
+          <a href="#" class="block-item__btn"><i class='bx bx-heart' ></i> Add to wish list</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
