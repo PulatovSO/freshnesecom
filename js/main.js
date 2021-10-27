@@ -1,5 +1,4 @@
 
-// let gridView = document.querySelector('grid-view')
 let listView = document.querySelector('.product-blocks');
 let gridView = document.querySelector('.grid-cards');
 
