@@ -162,8 +162,8 @@
           <div class="fruits__inner">
             <h2 class="fruits__title">Fruit and vegetables</h2>
             <ul class="fruits__views">
-              <li class="fruits__view view"><button>Grid view</button></li>
-              <li class="fruits__view view"><button>List view</button></li>
+              <li class="fruits__view view"><button class="grid-view" onclick="gridbtn()">Grid view</button></li>
+              <li class="fruits__view view"><button class="list-view" onclick="listbtn()">List view</button></li>
               <li class="fruits__view"><button> <span>107</span> Products</button></li>
             </ul>
           </div>
@@ -437,6 +437,143 @@
           <span>Delivery in 1 day</span>
           <a href="#" class="block-item__btn-dark">Product Detail <i class='bx bx-chevron-right' ></i></a>
           <a href="#" class="block-item__btn"><i class='bx bx-heart' ></i> Add to wish list</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-cards col-sm-12 col-md-9">
+      <div class="grid-cards__wrap">
+        <div class="grid-cards__row category__cards products row between-xs">
+          <div class="products__item product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDH9thyz55ISpkGsHqVOLYCuWyZWMJJ6k9bQ&usqp=CAU" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://blogs.uoregon.edu/natewoodburyaad250/files/2012/10/PSD_Food_illustrations_3190_pancakes_with_butter-1wi1tz5.jpg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://asset2.cxnmarksandspencer.com/is/image/mands/20210928_Food_DLP_SB-27047_929x929-1?wid=700&qlt=70&fmt=pjpeg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards__row category__cards products row between-xs">
+          <div class="products__item product">
+            <img src="https://static.toiimg.com/thumb/62711166.cms?resizemode=4&width=800" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://www.2foodtrippers.com/wp-content/uploads/2021/03/American-Food-Icons-Social-IMG.jpg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://www.thespruceeats.com/thmb/S5QoRgJuk4g4bksJzIEFZJgx64s=/1500x1125/filters:fill(auto,1)/GettyImages-666710160-0b77f6cf3f3049e498a0d80bbf6535cc.jpg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards__row category__cards products row between-xs">
+          <div class="products__item product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDH9thyz55ISpkGsHqVOLYCuWyZWMJJ6k9bQ&usqp=CAU" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://blogs.uoregon.edu/natewoodburyaad250/files/2012/10/PSD_Food_illustrations_3190_pancakes_with_butter-1wi1tz5.jpg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://asset2.cxnmarksandspencer.com/is/image/mands/20210928_Food_DLP_SB-27047_929x929-1?wid=700&qlt=70&fmt=pjpeg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cards__row category__cards products row between-xs">
+          <div class="products__item product">
+            <img src="https://static.toiimg.com/thumb/62711166.cms?resizemode=4&width=800" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://www.2foodtrippers.com/wp-content/uploads/2021/03/American-Food-Icons-Social-IMG.jpg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
+          <div class="products__item product">
+            <span class="product__discount">-36%</span>
+            <span class="product__discount">48.56</span>
+            <img src="https://www.thespruceeats.com/thmb/S5QoRgJuk4g4bksJzIEFZJgx64s=/1500x1125/filters:fill(auto,1)/GettyImages-666710160-0b77f6cf3f3049e498a0d80bbf6535cc.jpg" alt="image">
+            <h3 class="product__title">Product Title</h3>
+            <p class="product__paragraph">Space for a small product description </p>
+            <div class="product__btn-wrap">
+              <span class="product__btn-text">1.48 USD</span>
+              <a href="#" class="product__btn">Buy now</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

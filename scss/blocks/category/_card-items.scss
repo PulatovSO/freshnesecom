@@ -1,4 +1,19 @@
 
+.hide-blocks {
+  display: none;
+}
+
+.grid-cards {
+  display: none;
+}
+
+.show-grid {
+  display: unset;
+}
+
+.grid-cards__row {
+  margin-bottom: 48px;
+}
 
 .block-item {
   margin-left: 10px;
