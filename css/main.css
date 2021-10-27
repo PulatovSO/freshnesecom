@@ -1640,6 +1640,14 @@ a {
   display: flex;
 }
 
+.fruits__views .view button {
+  outline: none;
+}
+
+.fruits__views .view button:hover {
+  color: #6a983c;
+}
+
 .fruits__views .view:before {
   content: '';
   width: 15px;
@@ -2050,6 +2058,11 @@ main {
 
 .grid-cards {
   display: none;
+}
+
+.product img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .show-grid {

@@ -7,6 +7,12 @@
   display: none;
 }
 
+.product {
+  img {
+    object-fit: cover;
+  }
+}
+
 .show-grid {
   display: unset;
 }

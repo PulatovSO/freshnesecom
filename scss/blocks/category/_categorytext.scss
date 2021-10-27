@@ -31,6 +31,14 @@
   display: flex;
 
   .view{
+    button {
+      outline: none;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+
     &:before {
       content: '';
       width: 15px;
