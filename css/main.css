@@ -1522,6 +1522,80 @@ a {
   }
 }
 
+.page-bottom {
+  margin-top: 64px;
+}
+
+.page-bottom__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.page-bottom__pages p {
+  font-family: "Open Sans";
+  color: #a9a9a9;
+}
+
+.page-bottom__pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-bottom__pages ul li {
+  margin-left: 8px;
+}
+
+.page-bottom__pages ul li:nth-child(3) {
+  color: #6a983c;
+}
+
+.page-bottom__btn {
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  background: #6a983c;
+  color: #fff;
+  border: 1px solid #6a983c;
+  border-radius: 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.page-bottom__btn i {
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+}
+
+.page-bottom__btn:hover {
+  background: transparent;
+  color: #6a983c;
+}
+
+.page-bottom__nums {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.page-bottom__nums span {
+  margin-right: 4px;
+  padding: 0 8px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6a983c;
+  background: #f4f8ec;
+  border-radius: 12px;
+}
+
 .fruits__root {
   font-family: "Open Sans";
   font-size: 12px;
@@ -2004,6 +2078,7 @@ main {
 .block-item img {
   width: 268px;
   height: 285px;
+  border-radius: 12px;
 }
 
 .block-item__title {
