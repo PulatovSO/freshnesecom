@@ -1,0 +1,170 @@
+
+.summary {
+  padding: 32px 16px;
+  border: 1px solid $color-gray;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &__paragraph {
+    margin-top: 4px;
+    font-family: $font-opensans;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-mid-gray;
+  }
+}
+
+.sumpro {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    width: 100px;
+    height: 67px;
+  }
+
+  &__btn {
+    padding-left: 0;
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    img {
+      width: 12px;
+      height: 12px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.sumcol {
+
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  &__lists {
+    margin-top: -10px;
+    display: flex;
+    
+    li {
+      margin-bottom: 7px;
+      font-family: $font-opensans;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    
+    .key__list {
+      margin-right: 14px;
+      
+      li {
+        color: $color-mid-gray;
+      }
+    }
+  }
+
+  &__ratings {
+    margin: 0;
+    i {
+      color: #FDBC15;
+    }
+  }
+}
+
+.sumcol__price-wrap {
+  margin-top: 8px;
+}
+
+.cost {
+  margin-top: 46px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    text-align: right;
+  }
+}
+
+
+.summary__promocode {
+  padding: 11px 21px;
+  background: $color-light-gray;
+  border: 1px solid $color-gray;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  input {
+    background: transparent;
+    border: none;
+  }
+
+  button {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}
+
+
+.total {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  &__p {
+    margin: 0;
+    font-family: $font-opensans;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-green;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: $color-green;
+  }
+}
+
+
