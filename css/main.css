@@ -2630,4 +2630,365 @@ main {
     padding-right: 0;
   }
 }
+
+.billing__info {
+  margin-bottom: 64px;
+}
+
+.billing__title {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #151515;
+}
+
+.billing__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.bform__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bform__inner-block {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bform__inner-block:nth-child(2) {
+  margin-left: 32px;
+}
+
+.bform__inner-block label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.bform__inner-block input {
+  max-width: 319px;
+  padding: 11px 21px;
+  background: #f9f9f9;
+  color: #5a5a5a;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  outline-color: #d1d1d1;
+}
+
+.bform__inner-block input::-webkit-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bform__inner-block input:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bform__inner-block input::-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bform__inner-block input::placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.bform__inner-block .filter__label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 19px;
+}
+
+.method {
+  margin-bottom: 64px;
+}
+
+.method__radio {
+  margin-bottom: 16px;
+}
+
+.method__radio .inner-span {
+  position: relative;
+  left: 100px;
+}
+
+.method__radio .inner-span img {
+  position: relative;
+  top: 3px;
+  left: 220px;
+}
+
+.method__checkwrap {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.method__checkwrap input:checked ~ .checkmark {
+  border: 5px solid #6a983c !important;
+}
+
+.method__checkwrap .green-check {
+  margin-right: 12px;
+  color: #6a983c;
+}
+
+.paymeth__radio {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.paymeth__radio input:checked ~ .checkmark {
+  border-color: #6a983c !important;
+}
+
+.paymeth__radio span {
+  width: 95%;
+  display: inline-block;
+  position: relative;
+}
+
+.paymeth__radio span img {
+  position: absolute;
+  right: 0;
+}
+
+.paymeth__radio .checkmark {
+  position: absolute;
+  top: 10px !important;
+}
+
+.paymeth__inner {
+  display: none;
+}
+
+#check-three:checked ~ .paymeth__inner {
+  display: unset;
+}
+
+#check-four:checked ~ .paymeth__inner {
+  display: unset;
+}
+
+#check-five:checked ~ .paymeth__inner {
+  display: unset;
+}
+
+.paymeth__inner-block {
+  margin-top: 32px;
+}
+
+.inner-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inner-block label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.inner-block input {
+  padding: 11px 21px;
+  border: 1px solid #D1D1D1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.inner-block input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.inner-block input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.inner-block input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.inner-block input::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.inner-block #card-number {
+  max-width: 638px;
+}
+
+.inner-block #card-holder {
+  max-width: 350px;
+}
+
+.inner-block #expiration,
+.inner-block #cvc {
+  width: 120px;
+}
+
+.card-detail {
+  margin-left: 32px;
+}
+
+.card-detail .inner-block:nth-child(2) {
+  margin-left: 16px;
+}
+
+.card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.additional {
+  margin-top: 64px;
+}
+
+.additional__inner {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.additional__inner label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.additional__inner textarea {
+  max-width: 670px;
+  height: 112px;
+  padding: 11px 21px;
+  border: 1px solid #D1D1D1;
+  background: #f9f9f9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.additional__inner textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.additional__inner textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.additional__inner textarea::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.additional__inner textarea::placeholder {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.confirmation {
+  margin-top: 64px;
+}
+
+.confirmation__inner {
+  margin-top: 32px;
+}
+
+.confirmation__inner-block {
+  margin-bottom: 16px;
+}
+
+.complete-btn {
+  margin-top: 16px;
+  padding: 16px 48px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  background: #6a983c;
+  color: #fff;
+  border: 2px solid #46760A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.complete-btn:hover {
+  background: transparent;
+  color: #6a983c;
+}
+
+.check {
+  margin-top: 32px;
+}
+
+.check__title {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.check__p {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+
+.footer__copyright {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 19px;
+}
 /*# sourceMappingURL=main.css.map */

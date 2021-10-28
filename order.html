@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <title>Order</title>
+</head>
+
+<body>
+  <header id="site-header" class="header">
+    <div class="header__wrap fulled-container">
+      <div class="header__top row between-xs">
+        <ul class="header__contact-list contact-list row">
+          <li class="contact-list__item"><a href="#">Chat with us</a></li>
+          <li class="contact-list__item"><a href="tel:420336775664">+420 336 775 664</a></li>
+          <li class="contact-list__item"><a href="#">info@freshnesecom.com</a></li>
+        </ul>
+        <nav class="header__nav">
+          <ul class="header__nav-list nav-list row">
+            <li class="nav-list__item"><a href="blog.html">Blog</a></li>
+            <li class="nav-list__item"><a href="#">About Us</a></li>
+            <li class="nav-list__item"><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <div class="header__menu-wrap">
+          <button class="header__menu"><i class='bx bx-menu'></i></button>
+        </div>
+      </div>
+      <div class="header__middle row middle-xs between-xs">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
+        <form action="https://echo.htmlacademy.ru" class="header__form search-form">
+          <span class="search-form__toggle">
+            All categories <i class='bx bx-chevron-down'></i>
+            <div class="toggle-menu">
+              <ul>
+                <li><a href="#">Bakery</a></li>
+                <li><a href="category.html">Vegtables</a></li>
+                <li><a href="#">Meat and fish</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Special nutrition</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Pharmacy</a></li>
+              </ul>
+            </div>
+          </span>
+          <input type="text" id="search-item" name="search" aria-label="Search Products, categories ..." placeholder="Search Products, categories ..." required>
+          <button class="search-form__btn"><i class='bx bx-search bx-rotate-90'></i></button>
+        </form>
+        <ul class="header__icons">
+          <li class="header__item"><button class="header__icon icon-hidden"><i class='bx bx-search bx-rotate-90'></i></button></li>
+          <li class="header__item"><button class="header__icon"><img src="img/user.svg" alt="icon"></button></li>
+          <li class="header__item"><button class="header__icon"><img src="img/shopping.svg" alt="icon"></button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom bottom">
+      <ul class="bottom__list fulled-container row">
+        <li class="bottom__item">
+          <button class="bottom__btn">Bakery <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Fruit and Vegtables <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Meat and fish <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Kitchen <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Special nutrition <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Baby <i class='bx bx-chevron-down'></i></button>
+          <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="bottom__item">
+          <button class="bottom__btn">Pharmacy <i class='bx bx-chevron-down'></i></button>
+            <div class="toggle-menu">
+            <ul>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="fruits__root fulled-container"><span><a href="index.html">Homepage</a> /</span>  Checkout page</p>
+  </header>
+
+  <main class="fulled-container">
+    <section class="billing col-md-7">
+      <div class="billing__wrap">
+        <form action="https://echo.htmlacademy.ru" class="billing__form bform">
+          <h2 class="billing__title">Billing info</h2>
+          <p class="billing__p">Please enter your billing info <span>Step 1 of 5</span></p>
+          <!-- billing info -->
+          <div class="billing__info bform">
+            <div class="bform__block">
+              <div class="bform__inner-block">
+                <label for="fname">First name</label>
+                <input type="text" class="bform__input fname-input" name="fname" id="fname" placeholder="First name" required>
+              </div>
+              <div class="bform__inner-block">
+                <label for="lname">Last name</label>
+                <input type="text" class="bform__input lname-input" name="lname" id="lname" placeholder="First name" required>
+              </div>
+            </div>
+            <div class="bform__block">
+              <div class="bform__inner-block">
+                <label for="email">Email address</label>
+                <input type="email" class="bform__input email-input" name="email" id="email" placeholder="Email addess" required>
+              </div>
+              <div class="bform__inner-block">
+                <label for="phone">Phone number</label>
+                <input type="number" class="bform__input phone-input" name="phone" id="phone" placeholder="Phone number" required>
+              </div>
+            </div>
+            <div class="bform__block">
+              <div class="bform__inner-block">
+                <label for="address">Addess</label>
+                <input type="text" class="bform__input address-input" name="address" id="address" placeholder="Address" required>
+              </div>
+              <div class="bform__inner-block">
+                <label for="city">Town / City</label>
+                <input type="text" class="bform__input city-input" name="city" id="city" placeholder="Town or city" required>
+              </div>
+            </div>
+            <div class="bform__block">
+              <div class="bform__inner-block">
+                <label for="state">State / Country</label>
+                <input type="text" class="bform__input state-input" name="state" id="state" placeholder="Choose a state or Country" required>
+              </div>
+              <div class="bform__inner-block">
+                <label for="zip">ZIP/Postal code</label>
+                <input type="number" class="bform__input zip-input" name="zip" id="zip" placeholder="Postal code or ZIP" required>
+              </div>
+            </div>
+            <div class="bform__block">
+              <div class="bform__inner-block filter__block check-block">
+                <label class="filter__label" for="checkbox">Ship to a different address?
+                  <input type="checkbox" id="checkbox" name="checkbox">
+                  <span class="checkmark-box"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- billing method -->
+          <div class="billing__method method">
+            <h2 class="method__title billing__title">Billing method</h2>
+            <p class="method__p billing__p">Please enter your billing method <span>Step 2 of 5</span></p>
+            <div class="method__checkwrap">
+              <div class="method__radio filter__block check-block">
+                <label class="filter__label" for="check-one">
+                  FedEx <span class="inner-span"><span class="green-check">+32 USD</span>Additional price <img src="img/FedEx.png" alt="FedEx"></span>
+                  <input type="radio" id="check-one" name="radio-btn">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="method__radio filter__block check-block">
+                <label class="filter__label" for="check-two">
+                  DHL <span class="inner-span"><span class="green-check">+15 USD</span>Additional price <img src="img/dhl.png" alt="DHL"></span>
+                  <input type="radio" id="check-two" name="radio-btn">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- payment method -->
+          <div class="paymeth">
+            <h2 class="paymeth__title billing__title">Payment method</h2>
+            <p class="paymeth__p billing__p">Please enter your payment method <span>Step 3 of 5</span></p>
+            <div class="paymeth__radio filter__block check-block">
+              <label class="filter__label" for="check-three">
+                <span> Credit card <img src="img/visa.png" alt="Visa"></span>
+                <input type="radio" id="check-three" name="radio-btn" checked>
+                <span class="checkmark"></span>
+                <div class="paymeth__inner">
+                  <div class="paymeth__inner-block inner-block">
+                    <label for="card-number">Card number</label>
+                    <input type="number" id="card-number" name="number" placeholder="Card number" required>
+                  </div>
+                  <div class="paymeth__inner-block card-details">
+                    <div class="inner-block">
+                      <label for="card-holder">Card holder</label>
+                      <input type="text" id="card-holder" name="holder" placeholder="Card holder" required>
+                    </div>
+                    <div class="card-detail row">
+                      <div class="inner-block">
+                        <label for="expiration">Expiration date</label>
+                        <input type="number" id="expiration" name="expiration" placeholder="DD/MM/YY" required>
+                      </div>
+                      <div class="inner-block">
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" name="cvc" placeholder="CVC" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="paymeth__radio filter__block check-block">
+              <label class="filter__label" for="check-four">
+                <span> Paypal <img src="img/paypal.png" alt="Visa"></span>
+                <input type="radio" id="check-four" name="radio-btn">
+                <span class="checkmark"></span>
+                <div class="paymeth__inner">
+                  <div class="paymeth__inner-block inner-block">
+                    <label for="card-number">Card number</label>
+                    <input type="number" id="card-number" name="number" placeholder="Card number" required>
+                  </div>
+                  <div class="paymeth__inner-block card-details">
+                    <div class="inner-block">
+                      <label for="card-holder">Card holder</label>
+                      <input type="text" id="card-holder" name="holder" placeholder="Card holder" required>
+                    </div>
+                    <div class="card-detail row">
+                      <div class="inner-block">
+                        <label for="expiration">Expiration date</label>
+                        <input type="number" id="expiration" name="expiration" placeholder="DD/MM/YY" required>
+                      </div>
+                      <div class="inner-block">
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" name="cvc" placeholder="CVC" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="paymeth__radio filter__block check-block">
+              <label class="filter__label" for="check-five">
+                <span> Bitcoin <img src="img/bitcoin.png" alt="Visa"></span>
+                <input type="radio" id="check-five" name="radio-btn">
+                <span class="checkmark"></span>
+                <div class="paymeth__inner">
+                  <div class="paymeth__inner-block inner-block">
+                    <label for="card-number">Card number</label>
+                    <input type="number" id="card-number" name="number" placeholder="Card number" required>
+                  </div>
+                  <div class="paymeth__inner-block card-details">
+                    <div class="inner-block">
+                      <label for="card-holder">Card holder</label>
+                      <input type="text" id="card-holder" name="holder" placeholder="Card holder" required>
+                    </div>
+                    <div class="card-detail row">
+                      <div class="inner-block">
+                        <label for="expiration">Expiration date</label>
+                        <input type="number" id="expiration" name="expiration" placeholder="DD/MM/YY" required>
+                      </div>
+                      <div class="inner-block">
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" name="cvc" placeholder="CVC" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <!-- additional informations -->
+          <div class="additional">
+            <h2 class="additional__title billing__title">Additional informations</h2>
+            <p class="additional__p billing__p">Need something else? We will make it for you! <span>Step 4 of 5</span></p>
+            <div class="additional__inner">
+              <label for="notes">Order notes</label>
+              <textarea name="notes" id="notes" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+            </div>
+          </div>
+          <!-- confirmation -->
+          <div class="confirmation">
+            <h2 class="confirmation__title billing__title">Billing info</h2>
+            <p class="confirmation__p billing__p">We are getting to the end. Just few clicks and your order si ready! <span>Step 5 of 5</span></p>
+            <div class="confirmation__inner">
+              <div class="confirmation__inner-block filter__block check-block">
+                <label class="filter__label" for="confirmation-one">I agree with sending an Marketing and newsletter emails. No spam, promissed!
+                  <input type="checkbox" id="confirmation-one" name="confirmation-one">
+                  <span class="checkmark-box"></span>
+                </label>
+              </div>
+              <div class="confirmation__inner-block filter__block check-block">
+                <label class="filter__label" for="confirmation-two">I agree with our <a href="#">terms and conditions</a> and <a href="#">privacy policy.</a>
+                  <input type="checkbox" id="confirmation-two" name="confirmation-two">
+                  <span class="checkmark-box"></span>
+                </label>
+              </div>
+            </div>
+            <button class="complete-btn" type="submit">Complete order</button>
+            <div class="confirmation-check check">
+              <img src="img/check.png" alt="check">
+              <h3 class="check__title">All your data are safe</h3>
+              <p class="check__p">
+                We are using the most advanced <br>
+                security to provide you the best <br>
+                experience ever.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fulled-container">
+    <p class="footer__copyright">Copyright © 2020 Freshnesecom</p>
+  </footer>
+ <script src="js/main.js"></script>
+
+ <!-- <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br>
+ <br><br><br><br><br> -->
+</body>
+</html>
