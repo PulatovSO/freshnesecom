@@ -1,6 +1,7 @@
 
 .summary {
   padding: 32px 16px;
+  max-height: 850px;
   border: 1px solid $color-gray;
   box-sizing: border-box;
   border-radius: 12px;
@@ -166,5 +167,3 @@
     color: $color-green;
   }
 }
-
-

@@ -1,0 +1,78 @@
+
+.admin__title {
+  margin-top: 48px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.user__customer {
+  margin-left: 14px;
+  padding: 0 9px;
+  background: #f4f8ec;
+  border-radius: 12px; 
+}
+
+.admin {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid $color-gray;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  &__green {
+    margin-left: 14px;
+    padding: 0 9px;
+    background: #f4f8ec;
+    border-radius: 12px; 
+    color: $color-green;
+  }
+
+  &__wrap {
+    position: relative;
+    left: 50px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -50px;
+      width: 40px;
+      height: 40px;
+      background: #000;
+      background-image: url(../../img/customer.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__time {
+    font-family: $font-opensans;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-gray;
+  }
+
+  &__p {
+    margin: 0;
+    margin-top: 24px;
+    font-family: $font-opensans;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.user {
+  margin-left: auto;
+  margin-right: 0;
+  width: 80%;
+}

@@ -295,3 +295,66 @@
   font-size: 14px;
   line-height: 19px;
 }
+
+
+// responsiveness
+
+@media (max-width: 768px) {
+  .summary {
+    margin-top: 50px;
+  }
+
+  .bform__block {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bform__inner-block {
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+
+    input {
+      max-width: 100%;
+    }
+  }
+
+
+  .method__radio {
+    margin-bottom: 16px;
+    position: relative;
+
+    
+    .inner-span {
+      position: relative;
+      left: 100px;
+
+      img {
+        position: absolute;
+        top: 3px;
+        // left: 220px;
+        right: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 633px) {
+  .method__radio {
+    margin-bottom: 16px;
+    position: relative;
+
+    
+    .inner-span {
+      position: relative;
+      left: 50px;
+
+      img {
+        display: none;
+      }
+    }
+  }
+}
